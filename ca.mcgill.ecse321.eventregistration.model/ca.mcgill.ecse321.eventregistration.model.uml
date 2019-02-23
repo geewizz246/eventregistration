@@ -5,7 +5,7 @@
       <contents xmi:type="ecore:EAnnotation" xmi:id="_z67MACpFEemIF-eyjY-CkA" source="codegen">
         <details xmi:id="_z67MASpFEemIF-eyjY-CkA" key="codegenDirectory" value="/ca.mcgill.ecse321.eventregistration.model/src-gen"/>
         <details xmi:id="_z7OuACpFEemIF-eyjY-CkA" key="observedFolders" value="/ca.mcgill.ecse321.eventregistration.model/src"/>
-        <details xmi:id="_j1hZQCpGEemIF-eyjY-CkA" key="AssociatedSourceCode" value="/ca.mcgill.ecse321.eventregistration.model/src-gen/ca/mcgill/ecse321/eventregistration/model/Person.java;2513837184/1;/ca.mcgill.ecse321.eventregistration.model/src-gen/ca/mcgill/ecse321/eventregistration/model/RegistrationManager.java;3431569312/1;/ca.mcgill.ecse321.eventregistration.model/src-gen/ca/mcgill/ecse321/eventregistration/model/Registration.java;2740283501/1;/ca.mcgill.ecse321.eventregistration.model/src-gen/ca/mcgill/ecse321/eventregistration/model/Event.java;2163076218/1;"/>
+        <details xmi:id="_j1hZQCpGEemIF-eyjY-CkA" key="AssociatedSourceCode" value="/ca.mcgill.ecse321.eventregistration.model/src-gen/ca/mcgill/ecse321/eventregistration/model/Person.java;2384425818/1;/ca.mcgill.ecse321.eventregistration.model/src-gen/ca/mcgill/ecse321/eventregistration/model/RegistrationManager.java;2783934436/1;/ca.mcgill.ecse321.eventregistration.model/src-gen/ca/mcgill/ecse321/eventregistration/model/Registration.java;1588063428/1;/ca.mcgill.ecse321.eventregistration.model/src-gen/ca/mcgill/ecse321/eventregistration/model/Event.java;3856570718/1;"/>
       </contents>
       <contents xmi:type="ecore:EAnnotation" xmi:id="_Di_nACtMEem308S6qkwh1Q" source="preferences">
         <contents xmi:type="ecore:EAnnotation" xmi:id="_Di_nAStMEem308S6qkwh1Q" source="com.yattasolutions.codegen.reverse">
@@ -48,24 +48,20 @@
           <packagedElement xmi:type="uml:Package" xmi:id="_Kk3NUCpGEemIF-eyjY-CkA" name="eventregistration">
             <packagedElement xmi:type="uml:Package" xmi:id="_SG-T4CpGEemIF-eyjY-CkA" name="model">
               <packagedElement xmi:type="uml:Class" xmi:id="_clrHYCpGEemIF-eyjY-CkA" name="Person">
-                <ownedAttribute xmi:id="_HQHCkCpHEemIF-eyjY-CkA" name="registrationManager" type="_ENxS8CpHEemIF-eyjY-CkA" association="_HQGbgCpHEemIF-eyjY-CkA">
-                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HQKs8CpHEemIF-eyjY-CkA" value="1"/>
-                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HQL7ECpHEemIF-eyjY-CkA" value="1"/>
-                </ownedAttribute>
                 <ownedAttribute xmi:id="_lWejwCpIEemIF-eyjY-CkA" name="name" visibility="public">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedAttribute>
               </packagedElement>
               <packagedElement xmi:type="uml:Class" xmi:id="_ENxS8CpHEemIF-eyjY-CkA" name="RegistrationManager">
-                <ownedAttribute xmi:id="_HQL7ESpHEemIF-eyjY-CkA" name="persons" type="_clrHYCpGEemIF-eyjY-CkA" aggregation="composite" association="_HQGbgCpHEemIF-eyjY-CkA">
+                <ownedAttribute xmi:id="_HQL7ESpHEemIF-eyjY-CkA" name="persons" type="_nIPm4CpJEemIF-eyjY-CkA" aggregation="composite" association="_HQGbgCpHEemIF-eyjY-CkA">
                   <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HQL7EipHEemIF-eyjY-CkA"/>
                   <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HQL7EypHEemIF-eyjY-CkA" value="*"/>
                 </ownedAttribute>
-                <ownedAttribute xmi:id="_Qk95ISpHEemIF-eyjY-CkA" name="registrations" type="_MQcI4CpHEemIF-eyjY-CkA" aggregation="composite" association="_Qk8D8CpHEemIF-eyjY-CkA">
+                <ownedAttribute xmi:id="_Qk95ISpHEemIF-eyjY-CkA" name="registrations" type="_n6ccQDSDEem-V58JCDuJyQ" aggregation="composite" association="_Qk8D8CpHEemIF-eyjY-CkA">
                   <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qk95IipHEemIF-eyjY-CkA"/>
                   <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qk95IypHEemIF-eyjY-CkA" value="*"/>
                 </ownedAttribute>
-                <ownedAttribute xmi:id="_osWI0CpHEemIF-eyjY-CkA" name="events" type="_idRXcCpHEemIF-eyjY-CkA" aggregation="composite" association="_osTskCpHEemIF-eyjY-CkA">
+                <ownedAttribute xmi:id="_osWI0CpHEemIF-eyjY-CkA" name="events" type="_nILVcCpJEemIF-eyjY-CkA" aggregation="composite" association="_osTskCpHEemIF-eyjY-CkA">
                   <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_osWI0SpHEemIF-eyjY-CkA"/>
                   <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_osWI0ipHEemIF-eyjY-CkA" value="*"/>
                 </ownedAttribute>
@@ -74,10 +70,6 @@
                 </ownedAttribute>
               </packagedElement>
               <packagedElement xmi:type="uml:Class" xmi:id="_MQcI4CpHEemIF-eyjY-CkA" name="Registration">
-                <ownedAttribute xmi:id="_Qk9SECpHEemIF-eyjY-CkA" name="registrationManager" type="_ENxS8CpHEemIF-eyjY-CkA" association="_Qk8D8CpHEemIF-eyjY-CkA">
-                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qk9SESpHEemIF-eyjY-CkA" value="1"/>
-                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qk95ICpHEemIF-eyjY-CkA" value="1"/>
-                </ownedAttribute>
                 <ownedAttribute xmi:id="_IIQ9ICpIEemIF-eyjY-CkA" name="person" type="_nIPm4CpJEemIF-eyjY-CkA" association="_IIPvACpIEemIF-eyjY-CkA">
                   <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IIQ9ISpIEemIF-eyjY-CkA" value="1"/>
                   <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IIRkMCpIEemIF-eyjY-CkA" value="1"/>
@@ -91,10 +83,6 @@
                 </ownedAttribute>
               </packagedElement>
               <packagedElement xmi:type="uml:Class" xmi:id="_idRXcCpHEemIF-eyjY-CkA" name="Event">
-                <ownedAttribute xmi:id="_osU6sCpHEemIF-eyjY-CkA" name="registrationManager" type="_ENxS8CpHEemIF-eyjY-CkA" association="_osTskCpHEemIF-eyjY-CkA">
-                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_osU6sSpHEemIF-eyjY-CkA" value="1"/>
-                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_osU6sipHEemIF-eyjY-CkA" value="1"/>
-                </ownedAttribute>
                 <ownedAttribute xmi:id="_vcZq4CpIEemIF-eyjY-CkA" name="name" visibility="public">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedAttribute>
@@ -143,9 +131,24 @@
         <packagedElement xmi:type="uml:Class" xmi:id="_gOyGoCpHEemIF-eyjY-CkA" name="Set"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_HQGbgCpHEemIF-eyjY-CkA" name="" memberEnd="_HQHCkCpHEemIF-eyjY-CkA _HQL7ESpHEemIF-eyjY-CkA"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_Qk8D8CpHEemIF-eyjY-CkA" name="" memberEnd="_Qk9SECpHEemIF-eyjY-CkA _Qk95ISpHEemIF-eyjY-CkA"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_osTskCpHEemIF-eyjY-CkA" name="" memberEnd="_osU6sCpHEemIF-eyjY-CkA _osWI0CpHEemIF-eyjY-CkA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_HQGbgCpHEemIF-eyjY-CkA" name="" memberEnd="_HQHCkCpHEemIF-eyjY-CkA _HQL7ESpHEemIF-eyjY-CkA">
+      <ownedEnd xmi:id="_HQHCkCpHEemIF-eyjY-CkA" name="registrationManager" type="_ENxS8CpHEemIF-eyjY-CkA" association="_HQGbgCpHEemIF-eyjY-CkA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HQKs8CpHEemIF-eyjY-CkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HQL7ECpHEemIF-eyjY-CkA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Qk8D8CpHEemIF-eyjY-CkA" name="" memberEnd="_Qk9SECpHEemIF-eyjY-CkA _Qk95ISpHEemIF-eyjY-CkA">
+      <ownedEnd xmi:id="_Qk9SECpHEemIF-eyjY-CkA" name="registrationManager" type="_ENxS8CpHEemIF-eyjY-CkA" association="_Qk8D8CpHEemIF-eyjY-CkA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qk9SESpHEemIF-eyjY-CkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qk95ICpHEemIF-eyjY-CkA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_osTskCpHEemIF-eyjY-CkA" name="" memberEnd="_osU6sCpHEemIF-eyjY-CkA _osWI0CpHEemIF-eyjY-CkA">
+      <ownedEnd xmi:id="_osU6sCpHEemIF-eyjY-CkA" name="registrationManager" type="_ENxS8CpHEemIF-eyjY-CkA" association="_osTskCpHEemIF-eyjY-CkA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_osU6sSpHEemIF-eyjY-CkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_osU6sipHEemIF-eyjY-CkA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_IIPvACpIEemIF-eyjY-CkA" name="" memberEnd="_IIQWECpIEemIF-eyjY-CkA _IIQ9ICpIEemIF-eyjY-CkA">
       <ownedEnd xmi:id="_IIQWECpIEemIF-eyjY-CkA" name="registrations" type="_MQcI4CpHEemIF-eyjY-CkA" association="_IIPvACpIEemIF-eyjY-CkA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IIQWESpIEemIF-eyjY-CkA"/>
@@ -154,6 +157,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_nILVcCpJEemIF-eyjY-CkA" name="Event"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_nIPm4CpJEemIF-eyjY-CkA" name="Person"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_n6ccQDSDEem-V58JCDuJyQ" name="Registration"/>
     <profileApplication xmi:id="_z6-2YCpFEemIF-eyjY-CkA">
       <eAnnotations xmi:id="_z7BSoCpFEemIF-eyjY-CkA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
@@ -186,4 +190,7 @@
   <UMLLabProfile:Reference xmi:id="_nIJgQCpJEemIF-eyjY-CkA" base_Element="_nIFO0CpJEemIF-eyjY-CkA"/>
   <UMLLabProfile:Reference xmi:id="_nIO_0CpJEemIF-eyjY-CkA" base_Element="_nILVcCpJEemIF-eyjY-CkA"/>
   <UMLLabProfile:Reference xmi:id="_nITRQCpJEemIF-eyjY-CkA" base_Element="_nIPm4CpJEemIF-eyjY-CkA"/>
+  <UMLLabProfile:Reference xmi:id="_n6jJ8DSDEem-V58JCDuJyQ" base_Element="_n6ccQDSDEem-V58JCDuJyQ"/>
+  <UMLLabProfile:Patch xmi:id="_GuWOUDSEEem-V58JCDuJyQ" base_Element="_MQcI4CpHEemIF-eyjY-CkA" patchText="@@ -48,24 +48,8 @@&#xA; el;%0D&#xA;-%0Aimport Person;%0D&#xA; %0A%0D%0Ai&#xA;" conflicting="false"/>
+  <UMLLabProfile:Patch xmi:id="_HwJpkDSEEem-V58JCDuJyQ" base_Element="_ENxS8CpHEemIF-eyjY-CkA" patchText="@@ -48,61 +48,8 @@&#xA; el;%0D&#xA;-%0Aimport Event;%0D%0Aimport Registration;%0D%0Aimport Person;%0D&#xA; %0A%0D%0Ai&#xA;" conflicting="false"/>
 </xmi:XMI>

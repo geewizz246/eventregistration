@@ -1,24 +1,12 @@
 package ca.mcgill.ecse321.eventregistration.model;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
 import javax.persistence.Id;
 import java.sql.Date;
 import java.sql.Time;
 
 @Entity
 public class Event {
-	private RegistrationManager registrationManager;
-
-	@ManyToOne(optional = false)
-	public RegistrationManager getRegistrationManager() {
-		return this.registrationManager;
-	}
-
-	public void setRegistrationManager(RegistrationManager registrationManager) {
-		this.registrationManager = registrationManager;
-	}
-
 	private String name;
 
 	public void setName(String value) {
@@ -30,6 +18,13 @@ public class Event {
 		return this.name;
 	}
 
+	/**
+	* <pre>
+	*           1..1     1..1
+	* Event ------------------------> Date
+	*           &lt;       date
+	* </pre>
+	*/
 	private Date date;
 
 	public void setDate(Date value) {
@@ -40,6 +35,13 @@ public class Event {
 		return this.date;
 	}
 
+	/**
+	* <pre>
+	*           1..1     1..1
+	* Event ------------------------> Time
+	*           &lt;       startTime
+	* </pre>
+	*/
 	private Time startTime;
 
 	public void setStartTime(Time value) {
@@ -50,6 +52,13 @@ public class Event {
 		return this.startTime;
 	}
 
+	/**
+	* <pre>
+	*           1..1     1..1
+	* Event ------------------------> Time
+	*           &lt;       endTime
+	* </pre>
+	*/
 	private Time endTime;
 
 	public void setEndTime(Time value) {
@@ -59,4 +68,5 @@ public class Event {
 	public Time getEndTime() {
 		return this.endTime;
 	}
+
 }
