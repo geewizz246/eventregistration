@@ -32,6 +32,15 @@ public class EventRegistrationRestController {
 		return convertToDto(person);
 	}
 	
+	@GetMapping(value = { "/persons", "/persons/"})
+	public List<PersonDto> getAllPersons() {
+		List<PersonDto> personDtos = new ArrayList<>();
+		for (Person person : service.getAllPersons()) {
+			personDtos.add(convertToDto(person));
+		}
+		return personDtos;
+	}
+	
 	@PostMapping(value = { "/events/{name}", "/events/{name}/" })
 	public EventDto createEvent(@PathVariable("name") String name, @RequestParam Date date,
 	@RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.TIME, pattern = "HH:mm") LocalTime startTime,
